@@ -27,9 +27,11 @@ void arrayPrinter(int x[][10], int size)
 
 int main()
 {
+    /*
+        int a = 10;
 
-    int a = 10;
+        std::cout << a << std::endl;
 
-    std::cout << a << std::endl;
-    std::cout << &a;
+        std::cout << &a;
+        */
 }
