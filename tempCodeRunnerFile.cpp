@@ -1,2 +1,2 @@
 
-        std::string name = "Lorik";
+    std::string *stringPointer = nullptr;

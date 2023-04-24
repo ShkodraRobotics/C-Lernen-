@@ -2,7 +2,8 @@
 
 void pointerausgabe(auto *x)
 {
-    std::cout << "ausgabe: " << *x;
+    *x += 1;
+    std::cout << "ausgabe in funktion : " << *x << std::endl;
 }
 
 int main()
@@ -64,17 +65,30 @@ int main()
     // pointerausgabe(ersterPoint);
 
     //________________________References______________________________
+    /*
+        int a = 10;
+        int &aRef = a;
+        double b = 1.99;
+        double &bref = b;
+        int c = 20;
+        int &cref = c;
 
-    int a = 10;
-    int &aRef = a;
-    double b = 1.99;
-    double &bref = b;
-    int c = 20;
-    int &cref = c;
+        std::cout << a << std::endl;
+        aRef++;
+        std::cout << aRef << std::endl;
+        bref++;
+        std::cout << bref << std::endl;
+    */
 
-    std::cout << a << std::endl;
-    aRef++;
-    std::cout << aRef << std::endl;
-    bref++;
-    std::cout << bref << std::endl;
+    //________________Pointer_Funktionen__________________________________
+
+    std::cout << "vorher " << *Pointerübung1 << std::endl;
+    *Pointerübung1 += 2;
+    std::cout << "Nacher " << *Pointerübung1 << std::endl;
+    pointerausgabe(Pointerübung1);
+    std::cout << "Nach funktion" << *Pointerübung1 << std::endl;
+
+    int numA = 10;
+    pointerausgabe(&numA);
+    std::cout << numA;
 }
