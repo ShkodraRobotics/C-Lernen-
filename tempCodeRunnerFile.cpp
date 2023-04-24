@@ -1,2 +1,1 @@
 
-    std::string *stringPointer = nullptr;
